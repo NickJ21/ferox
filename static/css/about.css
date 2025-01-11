@@ -1,0 +1,51 @@
+/* About Header */
+
+.about-banner {
+    display: block;
+    background: linear-gradient(to right, rgb(75, 138, 200), white);
+    margin: 0;
+    padding: 40px 0;
+}
+
+.about-banner h1 {
+    color: white;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 3.5em;
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+/* About Contents */
+.about-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+}

@@ -1,0 +1,37 @@
+{% load static %}
+<nav class="navbar container">
+    <!-- Left Side -->
+    <div class="logo"><a href="{% url 'home' %}">
+            <img src="{% static 'images/logo.png' %}" alt="Ferox Logo">
+        </a>
+    </div>
+    <!-- Right Side Drop Down Bar-->
+    <ul class="menu-bar">
+
+        <li class="nav-item"><a href="#">Industries <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </div>
+
+        </li>
+
+        <li class="nav-item"><a href="{% url 'about' %}">About</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+
+</nav>

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Slogan Image -->
+<div class="container image-container slogan-container">
+    <img class="map-img" src="{% static 'images/working.jpg' %}">
+
+    <div class="slogan">
+        <h1 class="slogan-brand">Ferox Aero</h1>
+        <p class="slogan-text">Precision Data <br />Elevated Insights</p>
+    </div>
+</div>
+<!-- Home Sections -->
+<div class="container home-section section-container">
+    <div class="section-image">
+        <img src="{% static 'images/mapping.jpg' %}">
+    </div>
+    <div class=" center-column section-text">
+        <h2>Commercial Drone Services Tailored to Your Project</h2>
+        <p>Ferox Aero specializes in advanced drone mapping and inspection services, delivering innovative solutions
+            to diverse industries such as construction, agriculture, energy, and infrastructure. Our cutting
+            edge technology and expertise empower clients with precise, efficient, and cost-effective data insights.</p>
+    </div>
+</div>
+
+<div class="container home-section section-container">
+    <div class="section-image">
+        <img src="{% static 'images/software-image.png' %}">
+    </div>
+    <div class=" center-column section-text">
+        <h2>Cutting Edge Technology</h2>
+        <p>High resolution cameras, thermal imaging, and LIDAR sensors provide 3D mapping, real-time data analytics, and
+            advanced reporting when you need it - how you need it.</p>
+        <a class="btn-more" href="#"><span>Learn More</span></a>
+    </div>
+</div>
+
+
+{% endblock %}

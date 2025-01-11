@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="about-banner">
+    <h1>About Ferox Aero</h1>
+</div>
+
+<div class="about-container">
+    <div class="about-image">
+        <img src="{% static 'images/city.jpg' %}" alt="">
+    </div>
+    <div class="about-text">
+        <p>At Ferox Aero, we are a veteran-owned UAS mapping business dedicated to providing high-quality, reliable
+            drone
+            services to the construction and agriculture industries. With a strong foundation of discipline, precision,
+            and
+            attention to detail cultivated from our military experience, we specialize in delivering accurate aerial
+            mapping, surveying, and data analysis to help streamline your projects. Whether it's tracking construction
+            progress, assessing land for agricultural use, or creating detailed topographic maps, our cutting-edge drone
+            technology ensures you get the most efficient and effective solutions. We're committed to supporting your
+            success while upholding the values of integrity, service, and excellence that define our business.
+            <br />
+            We are proud to serve clients in Albuquerque, NM, and San Diego, CA, offering customized services tailored
+            to the unique needs of each region. From construction site monitoring to crop health analysis, our team is
+            committed to supporting your success while upholding the values of integrity, service, and excellence that
+            define our business.
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}
