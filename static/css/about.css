@@ -2,9 +2,11 @@
 
 .about-banner {
     display: block;
-    background: linear-gradient(to right, rgb(75, 138, 200), white);
+    background: linear-gradient(to right, rgb(75, 138, 200), rgb(200, 138, 75, 0.9));
     margin: 0;
+    margin-top: 20px;
     padding: 40px 0;
+    border-radius: 10px;
 }
 
 .about-banner h1 {
@@ -27,7 +29,6 @@
 
 /* About Contents */
 .about-container {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

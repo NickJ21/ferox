@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact {% endblock %}
+
+{% load static %}
+{% load widget_tweaks %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-banner">
+        <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact-call center-column container">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p class="call-text">Call Us Today.</p>
+        <p class="call-number">+1 999 999 99xx</p>
+    </div>
+
+    <div class="container center-column contact-form">
+        <p>Please use the form below to contact us, make inquiries, or set up a consultation.</p>
+        <form id="emailForm" class="" method="POST" action=".">
+            {% csrf_token %}
+            <label for="name">Name</label>
+            {{ form.name|add_class:"form-input" }}
+            <label for="number">Phone Number</label>
+            {{ form.number|add_class:"form-input" }}
+            <label for="email">Email</label>
+            {{ form.email|add_class:"form-input" }}
+            <label for="message">Comments</label>
+            {{ form.message|add_class:"form-textarea" }}
+
+            <button>Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}

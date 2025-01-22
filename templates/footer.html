@@ -1,0 +1,49 @@
+{% load static %}
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-logo">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Ferox Logo">
+            </a>
+
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <div class="footer-industries">
+                <h4>Industries</h4>
+                <ul>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Mapping</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <ul>
+                    <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                    <li class="nav-item"><a href="{% url 'projects_list' %}">Our Work</a></li>
+                    <li class="nav-item"><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Ferox. All rights reserved.</p>
+    </div>
+</footer>
