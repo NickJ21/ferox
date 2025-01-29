@@ -30,15 +30,20 @@
 .footer-info {
     flex: 3;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .footer-industries,
 .footer-services,
 .footer-about {
-    width: 30%;
+    flex: 1;
     margin-bottom: 20px;
+    border-right: 3px solid #555;
+    text-align: center;
+}
+
+.footer-industries {
+    border-left: 3px solid #555;
 }
 
 .footer-industries h4,

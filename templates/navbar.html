@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="navbar container">
+<nav class="navbar">
     <!-- Left Side -->
     <div class="logo"><a href="{% url 'home' %}">
             <img src="{% static 'images/logo.png' %}" alt="Ferox Logo">
@@ -11,8 +11,8 @@
         <li class="nav-item"><a href="#">Industries <i class="fa-solid fa-caret-down"></i></a>
             <div class="dropdown-menu">
                 <ul>
-                    <li><a href="#">Construction</a></li>
-                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="{% url 'construction' %}">Construction</a></li>
+                    <li><a href="{% url 'agriculture' %}">Agriculture</a></li>
                 </ul>
             </div>
         </li>
@@ -35,4 +35,7 @@
         <li class="nav-item"><a href="{% url 'contact' %}">Contact</a></li>
     </ul>
 
+    <div class="nav-contact">
+        <p class="nav-contact-text">Call +1 999 999 99xx</p>
+    </div>
 </nav>

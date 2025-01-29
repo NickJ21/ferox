@@ -6,3 +6,9 @@ def home(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def construction(request):
+    return render(request, 'pages/construction.html')
+
+def agriculture(request):
+    return render(request, 'pages/agriculture.html')
