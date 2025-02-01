@@ -22,10 +22,15 @@
 
     {% include 'navbar.html' %}
 
-    <main class="container">
+    {% block above_container %}
+
+    {% endblock %}
+
+    <main class="{% block main_class %}container{% endblock %}">
         {% block content %}
         {% endblock %}
     </main>
+
 
 
     {% include 'footer.html' %}

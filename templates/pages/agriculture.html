@@ -7,7 +7,65 @@
 <link rel="stylesheet" href="{% static 'css/agriculture.css' %}">
 {% endblock %}
 
+{% block main_class %}not-contained{% endblock %}
+
+{% block above_container %}
+<div class="agriculture-banner">
+    <h1 class="banner-text">Agriculture <br />Solutions</h1>
+</div>
+{% endblock %}
+
 {% block content %}
-<h1>Agriculture Page</h1>
+<h2 class="agriculture-slogan">Revolutionizing Farming with Drones</h2>
+<div class="container">
+    <p class="agriculture-slogan-text">Transform your farm with smarter, more efficient solutions powered by
+        cutting-edge drone technology.</p>
+
+    <div class="agriculture-section container">
+        <div class="section-image">
+            <img src="/static/images/data.jpg" alt="#">
+        </div>
+        <div class="section-text">
+            <ul>
+                <li><span class="text-orange">Monitor</span> field health</li>
+                <li><span class="text-orange">Identify</span> issues early</li>
+                <li><span class="text-orange">Apply</span> resources more
+                    efficiently</li>
+            </ul>
+            <p>These high-tech tools allow for faster, more accurate planting, irrigation, and harvest
+                planning—saving both time and money. Embrace the future of farming and let drones deliver smarter
+                solutions for a more sustainable, profitable farm.</p>
+        </div>
+    </div>
+</div>
+<div class="agriculture-strip">
+    <h1 class="strip-text">The Future <br />is Now</h1>
+</div>
+<div class="container">
+    <h2 class="agriculture-slogan-2">Safer, Smarter, Efficient Agriculture</h2>
+    <div class="safety-section container">
+        <div class="grid-container container">
+            <div class="grid-item"><i class="fa-solid fa-helmet-safety"></i>
+                <p><span class="text-blue">Reduce</span> the risk of accidents</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-shield-virus"></i>
+                <p><span class="text-blue">Minimize</span> exposure to hazardous environments</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-building-shield"></i>
+                <p><span class="text-blue">Enhance</span> site monitoring</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-shield-halved"></i>
+                <p><span class="text-blue">Improve</span> emergency response time</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe width="100%" height="115" src="https://www.youtube.com/embed/7uh_vfMEZKM?si=Ow3HKuiDTq_0ZvQt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
 
 {% endblock %}

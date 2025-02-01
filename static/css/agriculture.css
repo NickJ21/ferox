@@ -1,0 +1,231 @@
+.agriculture-banner {
+    background-image: url('/static/images/agriculture.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.agriculture-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.banner-text {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 4.5em;
+    font-weight: bolder;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.banner-text::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 5%;
+    width: 50%;
+    border-bottom: solid 6px rgb(75, 138, 200);
+}
+
+/* Body of Page */
+.agriculture-slogan {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    font-size: 2em;
+}
+
+.agriculture-slogan-2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    font-size: 2em;
+}
+
+.agriculture-slogan-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.agriculture-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.section-image {
+    flex: 1;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-text {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-text ul li {
+    font-size: 1.2em;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+
+.text-orange {
+    color: rgb(200, 138, 75, 0.9);
+}
+
+.section-text p {
+    text-align: center;
+}
+
+.safety-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.grid-container i {
+    font-size: 5em;
+    color: rgb(200, 138, 75, 0.9);
+}
+
+.grid-container p {
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: 1.6;
+}
+
+.text-blue {
+    color: rgb(75, 138, 200);
+    text-transform: uppercase;
+    font-size: 1.2em
+}
+
+.agriculture-strip {
+    margin: 60px 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url('/static/images/field-survey.jpeg');
+    height: 400px;
+    background-size: cover;
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.agriculture-strip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.strip-text {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 4.5em;
+    font-weight: bolder;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.strip-text::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 5%;
+    width: 50%;
+    border-bottom: solid 6px rgb(75, 138, 200);
+}
+
+.strip-description {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

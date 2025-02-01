@@ -7,11 +7,14 @@
 <link rel="stylesheet" href="{% static 'css/projects_list.css' %}">
 {% endblock %}
 
+{% block above_container %}
+<div class="project-banner">
+    <h2>Our Work</h2>
+</div>
+{% endblock %}
+
 {% block content %}
 <section class="project-section">
-    <div class="project-banner">
-        <h2>Our Work</h2>
-    </div>
 
     <!-- One Card for Each Project -->
     {% for item in projects %}

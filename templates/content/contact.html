@@ -8,11 +8,14 @@
 <link rel="stylesheet" href="{% static 'css/contact.css' %}">
 {% endblock %}
 
+{% block above_container %}
+<div class="contact-banner">
+    <h2>Contact Us</h2>
+</div>
+{% endblock %}
+
 {% block content %}
 <section class="contact-section">
-    <div class="contact-banner">
-        <h2>Contact Us</h2>
-    </div>
 
     <div class="contact-call center-column container">
         <i class="fa-solid fa-phone-volume"></i>
