@@ -13,20 +13,14 @@
                 <ul>
                     <li><a href="{% url 'construction' %}">Construction</a></li>
                     <li><a href="{% url 'agriculture' %}">Agriculture</a></li>
+                    <li><a href="{% url 'oil' %}">Oil & Mining</a></li>
+                    <li><a href="{% url 'infrastructure' %}">Infrastructure & Utilities</a></li>
                 </ul>
             </div>
         </li>
 
         <li class="nav-item">
-            <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu">
-                <ul>
-                    <li><a href="#">Mapping</a></li>
-                    <li><a href="#">Inspection</a></li>
-                    <li><a href="#">Modeling</a></li>
-                    <li><a href="#">Item 4</a></li>
-                </ul>
-            </div>
+            <a href="{% url 'services' %}">Services</a>
 
         </li>
 

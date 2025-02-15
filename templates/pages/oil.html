@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact {% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/oil.css' %}">
+{% endblock %}
+
+{% block main_class %}not-contained{% endblock %}
+
+{% block above_container %}
+<div class="oil-banner">
+    <h1 class="banner-text">Oil & Mining<br />Solutions</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<h2 class="oil-slogan">Revolutionizing Exploration, Safety, Compliance</h2>
+<div class="container">
+    <p class="oil-slogan-text">For oil and mining industries, drones provide essential data that supports exploration,
+        operational safety, and environmental compliance. Aerial drones conduct geological surveys, map out terrain, and
+        collect data that can identify potential oil or mineral deposits. </p>
+
+    <div class="oil-section container">
+        <div class="section-image">
+            <img src="/static/images/mining.jpeg" alt="#">
+        </div>
+        <div class="section-text">
+            <p>In active mining and oil extraction sites, drones monitor and inspect infrastructure such as pipelines,
+                rigs, and storage tanks, providing regular reports that help prevent leaks and structural failures.
+                Additionally, Ferox Aero's drone technology supports reclamation efforts and environmental monitoring by
+                providing before-and-after imagery to assess the impact of operations and ensure regulatory compliance.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="oil-strip">
+    <h1 class="strip-text">Real-Time <br />Data</h1>
+    <p class="strip-description">Revolutionizing exploration, safety, and environmental compliance. <br />Enhancing
+        efficiency
+        and reducing risks.</p>
+</div>
+<div class="container">
+    <h2 class="oil-slogan-2">Powering Exploration & Industrial Insights</h2>
+    <div class="safety-section container">
+        <div class="grid-container container">
+            <div class="grid-item"><i class="fa-solid fa-helmet-safety"></i>
+                <p><span class="text-blue">Enhance</span> safety with real-time inspections</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-truck-front"></i>
+                <p><span class="text-blue">Optimize</span> exploration with aerial precision</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-tree-city"></i>
+                <p><span class="text-blue">Streamline</span> environmental compliance</p>
+            </div>
+            <div class="grid-item"><i class="fa-solid fa-oil-well"></i>
+                <p><span class="text-blue">Prevent</span> infrastructure failures</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe width="100%" height="115" src="https://www.youtube.com/embed/7uh_vfMEZKM?si=Ow3HKuiDTq_0ZvQt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -15,3 +15,9 @@ def agriculture(request):
 
 def services(request):
     return render(request, 'pages/services.html')
+
+def oil(request):
+    return render(request, 'pages/oil.html')
+
+def infrastructure(request):
+    return render(request, 'pages/infrastructure.html')
