@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Project
 from .forms import ContactForm
 from django.core.mail import send_mail
@@ -30,6 +31,12 @@ def contact_view(request):
                 email,
                 ['feroxtestemail@gmail.com']
             )
+
+             # Display a success message using Django's messages framework
+            messages.success(request, "Thank you for your message! We will get back to you soon.")
+
+            # Redirect to the same page to clear the form and prevent resubmission
+            return redirect('contact')  # Ensure 'contact' matches your URL pattern name for the contact page
         else:
             print("Invalid data on the form")
     else:

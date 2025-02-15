@@ -20,8 +20,16 @@
     <div class="contact-call center-column container">
         <i class="fa-solid fa-phone-volume"></i>
         <p class="call-text">Call Us Today.</p>
-        <p class="call-number">+1 999 999 99xx</p>
+        <p class="call-number">+1 505 221 6627</p>
     </div>
+
+    {% if messages %}
+    <div class="container center-column success-form">
+        {% for message in messages %}
+        <p class="success-message"><i class="fa-regular fa-circle-check"></i> {{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
 
     <div class="container center-column contact-form">
         <p>Please use the form below to contact us, make inquiries, or set up a consultation.</p>

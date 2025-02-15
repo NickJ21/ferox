@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact {% endblock %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block main_class %}not-contained{% endblock %}
+
+{% block above_container %}
+<div class="service-banner">
+    <h1 class="banner-text">Services</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="service-selector container">
+        <div class="grid-container container">
+            <div class="grid-item" data-scroll-to="inspections">
+                <div class="grid-item-inspections">
+                    <p>Inspections</p>
+                </div>
+            </div>
+            <div class="grid-item" data-scroll-to="mapping">
+                <div class="grid-item-mapping">
+                    <p>Mapping</p>
+                </div>
+            </div>
+            <div class="grid-item" data-scroll-to="modeling">
+                <div class="grid-item-modelling">
+                    <p>Modelling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-page-intro">
+        <p>Unlock the power of cutting-edge drone technology with our Inspection, Mapping, and 3D Modeling Services,
+            offering unparalleled precision and efficiency for industries like construction, infrastructure, and
+            government projects. Whether it's minimizing risk with detailed inspections, mapping expansive landscapes
+            with accuracy, or creating realistic 3D models for enhanced project visualization, we provide
+            government-compliant solutions that ensure data integrity and actionable insights for informed
+            decision-making.</p>
+    </div>
+</div>
+
+<section id="inspections" class="service-section">
+    <h2 class="section-slogan">Inspections</h2>
+    <div class="container">
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/static/images/inspection-section1.jpg" alt="Inspection Image 1">
+            </div>
+            <div class="image-item">
+                <img src="/static/images/inspection-section2.jpg" alt="Inspection Image 2">
+            </div>
+        </div>
+
+        <p class="section-text">Utilize our state-of-the-art drone technology for thorough and precise inspections
+            across a range of
+            industries including utilities, infrastructure, and construction. Our services reduce the need for manual
+            inspections, minimizing risk and providing detailed, actionable insights with less downtime.</p>
+
+        <div class="ndaa-section container">
+            <div class="ndaa-text">
+                <p>Ideal for government-related infrastructure projects, our NDAA compliance ensures that we meet
+                    stringent
+                    requirements for national security and data integrity.</p>
+                <div class="ndaa-list">
+                    <div class="ndaa-grid-container">
+                        <div class="ndaa-grid-item"><i class="fa-regular fa-square-check"></i>
+                            <p>Secure Data</p>
+                        </div>
+                        <div class="ndaa-grid-item"><i class="fa-regular fa-square-check"></i>
+                            <p>Trusted Manufacturers</p>
+                        </div>
+                        <div class="ndaa-grid-item"><i class="fa-regular fa-square-check"></i>
+                            <p>No Banned Components</p>
+                        </div>
+                        <div class="ndaa-grid-item"><i class="fa-regular fa-square-check"></i>
+                            <p>Certified Security</p>
+                        </div>
+                        <div class="ndaa-grid-item"><i class="fa-regular fa-square-check"></i>
+                            <p>Regular Audits</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="ndaa-image">
+                <img src="/static/images/ndaa.jpg">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="mapping" class="service-section">
+    <h2 class="section-slogan">Mapping</h2>
+    <div class="container">
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/static/images/mapping-section1.jpg" alt="Inspection Image 1">
+            </div>
+            <div class="image-item">
+                <img src="/static/images/mapping-section2.jpg" alt="Inspection Image 2">
+            </div>
+        </div>
+
+        <p class="section-text">Leverage our advanced aerial mapping capabilities to gain detailed geographical data for
+            planning, development, and environmental monitoring. Our precise mapping helps in decision-making processes,
+            offering clarity and accuracy that traditional methods cannot match.</p>
+        <div class="section-body">
+            <p class="body-text">We are fully compliant with government contracting requirements; providing mapping
+                services that
+                are crucial for: </p>
+            <div class="body-flex">
+                <ul>
+                    <li>Urban Planning</li>
+                    <li>Environmental Conservation</li>
+                    <li>Disaster Management</li>
+                </ul>
+                <div class="body-flex-images">
+                    <div class="body-image">
+                        <img src="/static/images/FAA.png" alt="Inspection Image 1">
+                    </div>
+                    <div class="body-image">
+                        <img src="/static/images/SAM.jpg" alt="Inspection Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="modeling" class="service-section">
+    <h2 class="section-slogan">Modeling</h2>
+    <div class="container">
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/static/images/modeling-section1.jpg" alt="Inspection Image 1">
+            </div>
+            <div class="image-item">
+                <img src="/static/images/modeling-section2.jpg" alt="Inspection Image 2">
+            </div>
+        </div>
+
+        <p class="section-text">Create detailed and accurate 3D models of landscapes, urban environments, and complex
+            infrastructures. These models are essential for project visualization, simulation, and analysis, helping
+            stakeholders understand and engage with the data more effectively.</p>
+
+        <p class="section-text">Our 3D modeling services are perfectly suited for government projects in urban
+            development, historical preservation, and any other field requiring detailed visual representation of
+            physical spaces.</p>
+
+</section>
+
+
+
+
+
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/services.js' %}"></script>
+{% endblock %}

@@ -138,6 +138,15 @@
     background-color: #0056b3;
 }
 
+.orange-text {
+    color: rgb(200, 138, 75);
+    font-size: 1.5em;
+}
+
+.blue-text {
+    color: rgb(75, 138, 200);
+    font-size: 1.5em;
+}
 
 /*
 .home-section:hover {

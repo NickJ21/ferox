@@ -1,0 +1,343 @@
+.service-banner {
+    background-image: url('/static/images/service-banner.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.service-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.banner-text {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 4.5em;
+    font-weight: bolder;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    text-align: left;
+    color: white;
+    padding: 0 20px;
+    z-index: 2;
+    line-height: 1.1;
+}
+
+.banner-text::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 5%;
+    width: 50%;
+    border-bottom: solid 6px rgb(75, 138, 200);
+}
+
+.service-selector {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.grid-item-inspections {
+    position: relative;
+    background-image: url('/static/images/inspection.jpeg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-inspections::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.grid-item-mapping {
+    position: relative;
+    background-image: url('/static/images/service-mapping.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-mapping::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.grid-item-modelling {
+    position: relative;
+    background-image: url('/static/images/modelling.png');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-modelling::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.grid-container p {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1.1;
+    z-index: 2;
+}
+
+/* Service Sections */
+
+.service-page-intro {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.section-slogan {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    font-size: 4em;
+    background: linear-gradient(135deg,
+            rgb(220, 220, 220) 30%,
+            rgb(211, 211, 211) 30%,
+            rgb(211, 211, 211) 70%,
+            rgb(220, 220, 220) 70%);
+    ;
+
+}
+
+.image-grid {
+    display: flex;
+    gap: 20px;
+    /* Adds space between the two images */
+    justify-content: center;
+    /* Centers the images horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the images */
+}
+
+.image-item {
+    flex: 1;
+    max-width: 30%;
+    /* Restricts the images to 45% of the width */
+    display: flex;
+    justify-content: center;
+    /* Centers the image within its container */
+}
+
+.image-item img {
+    width: 100%;
+    /* Ensures the image fills its container */
+    height: auto;
+    /* Set a fixed height for the images */
+    object-fit: cover;
+    /* Ensures the image covers the space without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow */
+}
+
+.section-text {
+    font-weight: 500;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.ndaa-section {
+    background-image: url('/static/images/ndaa-background.jpg');
+    display: flex;
+    height: 500px;
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ndaa-text {
+    color: white;
+    flex: 0 1 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    margin-left: 40px;
+    max-width: 100%;
+}
+
+.ndaa-text p {
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
+.ndaa-grid-container {
+    display: grid;
+    /* Set the container to grid layout */
+    grid-template-columns: 1fr;
+    /* 1 column for your grid (as per the layout requirement) */
+    grid-template-rows: repeat(5, auto);
+    /* Automatically adjust the row height for each item */
+    gap: 15px;
+    /* Adjust the spacing between grid items */
+    max-width: 100%;
+    /* Ensures grid stays within container */
+    width: 100%;
+    /* Allows grid to take full width */
+    box-sizing: border-box;
+    /* Ensures padding and margin don't affect the width */
+}
+
+.ndaa-grid-item {
+    display: flex;
+    /* Enable Flexbox for each item */
+    align-items: center;
+    /* Center items vertically */
+    gap: 10px;
+    /* Space between icon and text */
+    font-size: 1.5em;
+    /* Adjust font size */
+    flex-wrap: wrap;
+}
+
+.ndaa-grid-item i {
+    font-size: 2em;
+    /* Set the icon size */
+}
+
+.ndaa-grid-item p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+.ndaa-image {
+    flex: 1;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    max-width: 100%;
+    /* Makes sure image stays within container */
+    overflow: hidden;
+}
+
+.ndaa-image img {
+    width: 100%;
+    /* Makes the image responsive */
+    max-width: 500px;
+    /* Optional: limits the max size of the image */
+    height: auto;
+    /* Maintains aspect ratio */
+    object-fit: cover;
+}
+
+.body-text {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: left;
+}
+
+.body-flex {
+    display: flex;
+}
+
+.body-flex ul {
+    flex: 1;
+    font-size: 3.5em;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.body-flex-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adds space between the two images */
+    justify-content: center;
+    /* Centers the images horizontally */
+    margin-bottom: 20px;
+    /* Adds space below the images */
+}
+
+.body-image {
+    max-width: 80%;
+    /* Restricts the images to 45% of the width */
+    display: flex;
+    justify-content: center;
+    /* Centers the image within its container */
+}
+
+.body-image img {
+    width: 100%;
+    /* Ensures the image fills its container */
+    height: auto;
+    /* Set a fixed height for the images */
+    object-fit: cover;
+    /* Ensures the image covers the space without distortion */
+}

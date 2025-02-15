@@ -12,3 +12,6 @@ def construction(request):
 
 def agriculture(request):
     return render(request, 'pages/agriculture.html')
+
+def services(request):
+    return render(request, 'pages/services.html')
