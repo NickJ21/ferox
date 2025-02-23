@@ -33,21 +33,20 @@
 
     <div class="container center-column contact-form">
         <p>Please use the form below to contact us, make inquiries, or set up a consultation.</p>
+        <p class="required-field-note">* Required fields</p>
         <form id="emailForm" class="" method="POST" action=".">
             {% csrf_token %}
-            <label for="name">Name</label>
+            <label for="name">Name <span class="required">*</span></label>
             {{ form.name|add_class:"form-input" }}
-            <label for="number">Phone Number</label>
+            <label for="number">Phone Number <span class="required">*</span></label>
             {{ form.number|add_class:"form-input" }}
-            <label for="email">Email</label>
+            <label for="email">Email <span class="required">*</span></label>
             {{ form.email|add_class:"form-input" }}
-            <label for="message">Comments</label>
+            <label for="message">Comments <span class="required">*</span></label>
             {{ form.message|add_class:"form-textarea" }}
 
             <button>Send Message</button>
         </form>
     </div>
 </section>
-
-
 {% endblock %}

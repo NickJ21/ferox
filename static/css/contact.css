@@ -122,6 +122,22 @@
     background-color: #0056b3;
 }
 
+/* Required field styling */
+.required {
+    color: #d64045;
+    /* or any color you prefer */
+    margin-left: 4px;
+}
+
+.required-field-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+
 /* Success Message */
 .success-form {
     display: block;

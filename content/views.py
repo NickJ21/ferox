@@ -21,15 +21,16 @@ def contact_view(request):
 
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
+            number = form.cleaned_data['number']
             message = form.cleaned_data['message']
 
-            full_message = f"This is an email from your contact page\nName:{name}\nEmail:{email}\nMessage:{message}"
+            full_message = f"This is an email from your contact page\nName: {name}\nEmail: {email}\nPhone: {number}\nMessage: {message}"
 
             send_mail(
                 "Email from " + name,
-                message,
+                full_message,
                 email,
-                ['feroxtestemail@gmail.com']
+                ['jeremy.gurule@feroxaero.com']
             )
 
              # Display a success message using Django's messages framework
