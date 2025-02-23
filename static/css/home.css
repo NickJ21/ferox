@@ -1,3 +1,4 @@
+/* Base styles */
 .image-container {
     width: 100%;
     max-width: 100%;
@@ -5,7 +6,6 @@
     position: relative;
 }
 
-/* Dark overlay on the image */
 .image-container::before {
     content: '';
     position: absolute;
@@ -14,7 +14,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    /* Dark overlay */
     z-index: 1;
 }
 
@@ -22,6 +21,7 @@
     width: 100%;
     height: 550px;
     display: block;
+    object-fit: cover;
     z-index: 0;
 }
 
@@ -52,13 +52,15 @@
     font-weight: lighter;
 }
 
-/* Sections of Page */
+/* Section styles */
 .section-container {
     margin-top: 40px;
 }
 
-
 .home-section {
+    width: 85%;
+    max-width: 1440px;
+    margin: 40px auto;
     display: flex;
     align-items: center;
     padding: 20px 10px;
@@ -88,6 +90,7 @@
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
+    text-align: center;
 }
 
 .section-text h2::after {
@@ -106,6 +109,7 @@
     padding: 20px;
 }
 
+/* Section arrangements */
 .home-section:nth-child(odd) {
     flex-direction: row;
 }
@@ -122,22 +126,26 @@
     padding-right: 20px;
 }
 
+/* Button styles */
 .btn-more {
+    display: inline-block;
     text-decoration: none;
     color: white;
     background-color: rgb(75, 138, 200);
     font-size: 1.1rem;
     text-transform: uppercase;
-    padding: 1rem 0.5rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1), 0px 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+    margin: 20px;
 }
 
 .btn-more:hover {
     background-color: #0056b3;
 }
 
+/* Text styles */
 .orange-text {
     color: rgb(200, 138, 75);
     font-size: 1.5em;
@@ -148,7 +156,137 @@
     font-size: 1.5em;
 }
 
-/*
-.home-section:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 20px 50px rgba(0, 0, 0, 0.3);
-} */
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .map-img {
+        height: 450px;
+    }
+
+    .slogan {
+        top: 15%;
+    }
+
+    .slogan-brand {
+        font-size: 1.8em;
+    }
+
+    .slogan-text {
+        font-size: 4em;
+    }
+
+    .home-section {
+        margin: 30px 15px;
+        padding: 15px;
+    }
+
+    .section-text h2 {
+        font-size: 1.4em;
+    }
+
+    .section-text p {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    .btn-more {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .map-img {
+        height: 350px;
+    }
+
+    .slogan {
+        top: 15%;
+        left: 5%;
+    }
+
+    .slogan-brand {
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+
+    .slogan-text {
+        font-size: 2.5em;
+        margin-left: 20px;
+    }
+
+    .home-section {
+        flex-direction: column !important;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .section-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .section-text h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .section-text p {
+        font-size: 1em;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .btn-more {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+        margin: 20px auto;
+        width: fit-content;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .map-img {
+        height: 300px;
+    }
+
+    .slogan {
+        top: 10%;
+    }
+
+    .slogan-brand {
+        font-size: 1.2em;
+    }
+
+    .slogan-text {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+
+    .home-section {
+        margin: 15px 5px;
+        padding: 10px;
+    }
+
+    .section-text h2 {
+        font-size: 1.2em;
+    }
+
+    .section-text p {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .btn-more {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.4rem;
+    }
+}

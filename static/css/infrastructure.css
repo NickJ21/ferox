@@ -1,8 +1,8 @@
 .infrastructure-banner {
-    background-image: url('/static/images/powerlines.jpg');
+    background-image: url('/static/images/powerlines.jpeg');
     height: 400px;
     background-size: cover;
-    background-position: center 90%;
+    background-position: center 75%;
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
@@ -157,7 +157,7 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    background-image: url('/static/images/powerforward.jpg');
+    background-image: url('/static/images/powerforward.jpeg');
     height: 400px;
     background-size: cover;
     background-position: center 65%;
@@ -231,4 +231,187 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner-text {
+        font-size: 3.5em;
+        left: 55%;
+    }
+
+    .infrastructure-slogan,
+    .infrastructure-slogan-2 {
+        font-size: 1.8em;
+    }
+
+    .infrastructure-slogan-text {
+        font-size: 1em;
+    }
+
+    .infrastructure-section,
+    .infrastructure-section-2 {
+        padding: 15px;
+    }
+
+    .section-text,
+    .section-text-2 {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    .grid-container {
+        gap: 10px;
+    }
+
+    .grid-container i {
+        font-size: 4em;
+    }
+
+    .grid-container p {
+        font-size: 1.4em;
+    }
+
+    .strip-text {
+        font-size: 3.5em;
+    }
+
+    .strip-description {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .infrastructure-banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        font-size: 2.5em;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-text::after {
+        left: 25%;
+        width: 50%;
+    }
+
+    .infrastructure-slogan,
+    .infrastructure-slogan-2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .infrastructure-slogan-text {
+        font-size: 0.9em;
+        padding: 0 15px;
+    }
+
+    .infrastructure-section,
+    .infrastructure-section-2 {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .section-text,
+    .section-text-2 {
+        font-size: 1em;
+        padding: 15px 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .grid-container i {
+        font-size: 3.5em;
+    }
+
+    .grid-container p {
+        font-size: 1.2em;
+    }
+
+    .infrastructure-strip {
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .strip-text {
+        font-size: 2.5em;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .strip-text::after {
+        left: 25%;
+        width: 50%;
+    }
+
+    .strip-description {
+        font-size: 1.2em;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .infrastructure-banner {
+        height: 250px;
+    }
+
+    .banner-text {
+        font-size: 2em;
+    }
+
+    .infrastructure-slogan,
+    .infrastructure-slogan-2 {
+        font-size: 1.3em;
+    }
+
+    .infrastructure-slogan-text {
+        font-size: 0.85em;
+    }
+
+    .section-text,
+    .section-text-2 {
+        font-size: 0.9em;
+    }
+
+    .grid-container i {
+        font-size: 3em;
+    }
+
+    .grid-container p {
+        font-size: 1.1em;
+    }
+
+    .infrastructure-strip {
+        height: 250px;
+    }
+
+    .strip-text {
+        font-size: 2em;
+    }
+
+    .strip-description {
+        font-size: 1.1em;
+    }
 }

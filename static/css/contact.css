@@ -1,16 +1,25 @@
 .contact-banner {
-    display: block;
-    background: linear-gradient(to right, rgb(75, 138, 200), rgb(200, 138, 75));
-    margin: 0;
-    padding: 40px 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    background: linear-gradient(135deg,
+            rgb(220, 220, 220) 30%,
+            rgb(211, 211, 211) 30%,
+            rgb(211, 211, 211) 70%,
+            rgb(220, 220, 220) 70%);
+    ;
+
 }
 
 .contact-banner h2 {
-    color: white;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
+    font-size: 3em;
     font-weight: 900;
-    font-size: 3.5em;
     padding: 0;
     text-align: center;
     margin: 0;
@@ -135,4 +144,176 @@
     color: rgb(75, 138, 200);
     text-align: center;
     /* White for good contrast */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-banner {
+        padding: 30px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2.8em;
+    }
+
+    .contact-call i {
+        font-size: 2.3em;
+        padding-top: 15px;
+    }
+
+    .call-text {
+        font-size: 2em;
+    }
+
+    .call-number {
+        font-size: 1.6em;
+    }
+
+    .contact-form {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    .contact-form p {
+        font-size: 15px;
+    }
+
+    .success-form {
+        max-width: 80%;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .contact-banner {
+        padding: 25px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2.5em;
+    }
+
+    .contact-call {
+        margin-top: 15px;
+    }
+
+    .contact-call i {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+
+    .call-text {
+        font-size: 1.8em;
+        margin-top: 8px;
+    }
+
+    .call-number {
+        font-size: 1.4em;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .contact-form p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .contact-form .form-input,
+    .contact-form .form-textarea {
+        padding: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form .form-textarea {
+        min-height: 120px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .success-form {
+        max-width: 90%;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .success-message {
+        font-size: 1em;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .contact-banner {
+        padding: 20px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2em;
+    }
+
+    .contact-call i {
+        font-size: 1.8em;
+    }
+
+    .call-text {
+        font-size: 1.5em;
+    }
+
+    .call-number {
+        font-size: 1.2em;
+    }
+
+    .contact-form {
+        max-width: 95%;
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .contact-form p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .contact-form .form-input,
+    .contact-form .form-textarea {
+        padding: 8px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form .form-textarea {
+        min-height: 100px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .success-form {
+        max-width: 95%;
+        margin-top: 12px;
+        padding: 12px;
+    }
+
+    .success-message {
+        font-size: 0.9em;
+    }
 }

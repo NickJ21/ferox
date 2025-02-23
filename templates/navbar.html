@@ -5,8 +5,9 @@
             <img src="{% static 'images/logo.png' %}" alt="Ferox Logo">
         </a>
     </div>
+
     <!-- Right Side Drop Down Bar-->
-    <ul class="menu-bar">
+    <ul class="nav-menu">
 
         <li class="nav-item"><a href="#">Industries <i class="fa-solid fa-caret-down"></i></a>
             <div class="dropdown-menu">
@@ -25,11 +26,24 @@
         </li>
 
         <li class="nav-item"><a href="{% url 'about' %}">About</a></li>
+        <!-- 
         <li class="nav-item"><a href="{% url 'projects_list' %}">Our Work</a></li>
+        -->
         <li class="nav-item contact-item"><a href="{% url 'contact' %}">Contact</a></li>
     </ul>
 
     <div class="nav-contact">
         <p class="nav-contact-text">Call +1 505 221 6627</p>
     </div>
+
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+
 </nav>
+
+{% block js %}
+<script src="{% static 'js/navbar.js' %}"></script>
+{% endblock %}

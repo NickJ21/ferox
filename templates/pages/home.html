@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
-{% block main_class %}not-contained{% endblock %}
 
 {% block content %}
 <!-- Slogan Image -->
@@ -20,9 +19,9 @@
     </div>
 </div>
 <!-- Home Sections -->
-<div class="container home-section section-container">
+<div class="home-section">
     <div class="section-image">
-        <img src="{% static 'images/mapping.jpg' %}">
+        <img src="{% static 'images/mapping.jpeg' %}">
     </div>
     <div class=" center-column section-text">
         <h2><span class="orange-text">Trust</span> In Excellence</h2>
@@ -33,9 +32,9 @@
     </div>
 </div>
 
-<div class="container home-section section-container">
+<div class="home-section">
     <div class="section-image">
-        <img src="{% static 'images/software-image.png' %}">
+        <img src="{% static 'images/home-section2.jpeg' %}">
     </div>
     <div class=" center-column section-text">
         <h2>Your Vision, Our <span class="orange-text">Precision</span></h2>
@@ -44,7 +43,7 @@
             intricate 3D models, our drones are equipped to deliver high-quality data safely and securely, suitable for
             a wide range of applications including critical infrastructure, agriculture, and environmental monitoring.
         </p>
-        <a class="btn-more" href="#"><span>Learn More</span></a>
+        <a class="btn-more" href="{% url 'services' %}"><span>Learn More</span></a>
     </div>
 </div>
 

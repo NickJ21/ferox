@@ -26,10 +26,9 @@
             <div class="footer-services">
                 <h4>Services</h4>
                 <ul>
-                    <li><a href="#">Mapping</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
+                    <li><a href="{% url 'services' %}">Inspections</a></li>
+                    <li><a href="{% url 'services' %}">Mapping</a></li>
+                    <li><a href="{% url 'services' %}">Modeling</a></li>
                 </ul>
             </div>
 
@@ -37,7 +36,9 @@
                 <h4>About Us</h4>
                 <ul>
                     <li class="nav-item"><a href="{% url 'about' %}">About Us</a></li>
+                    <!--
                     <li class="nav-item"><a href="{% url 'projects_list' %}">Our Work</a></li>
+                    -->
                     <li class="nav-item"><a href="{% url 'contact' %}">Contact</a></li>
                 </ul>
             </div>

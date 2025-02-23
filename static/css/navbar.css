@@ -36,7 +36,7 @@
     width: auto;
 }
 
-.navbar ul {
+.nav-menu {
     flex: 5;
     list-style: none;
     display: flex;
@@ -141,4 +141,155 @@
 .navbar ul li:hover .dropdown-menu ul li a:hover {
     color: rgb(200, 138, 75);
     /* Light hover effect */
+}
+
+
+/* --- Mobile and Tablet Styles --- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .logo img {
+        height: 40px;
+        margin-top: 15px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .navbar ul li {
+        padding: 10px 15px;
+        /* Reduced padding for tablet */
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        /* Slightly smaller font for tablet */
+    }
+
+    .dropdown-menu {
+        width: 250px;
+        /* Slightly smaller dropdown width */
+    }
+
+    .dropdown-menu ul {
+        width: 250px;
+    }
+
+    .nav-contact {
+        flex: 1;
+    }
+
+    .nav-contact-text {
+        font-size: 1em;
+    }
+
+    /* Adjust skew angles for tablet */
+    .logo::after {
+        width: 40px;
+        transform: skewY(90deg);
+    }
+
+    .nav-contact::after {
+        width: 40px;
+        transform: skewY(90deg);
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        color: rgb(75, 138, 200);
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.95);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        width: 100%;
+        position: static;
+        background-color: rgba(51, 51, 51, 0.98);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .dropdown-menu ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu ul li {
+        padding: 10px 0;
+    }
+
+    .nav-item.active .dropdown-menu {
+        display: block;
+        max-height: 400px;
+        transition: max-height 0.3s ease-in;
+    }
+
+    .nav-item.active+.nav-item {
+        margin-top: 10px;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
+    .logo::after {
+        transform: skewY(90deg);
+    }
+}
+
+/* Add hover effects for both tablet and desktop */
+@media (min-width: 769px) {
+    .navbar ul li a:hover {
+        color: rgb(200, 138, 75);
+    }
+
+    .dropdown-menu ul li a:hover {
+        color: rgb(200, 138, 75);
+    }
 }

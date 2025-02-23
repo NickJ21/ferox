@@ -1,40 +1,55 @@
+/* Project Banner */
 .project-banner {
-    display: block;
-    background: linear-gradient(to right, rgb(75, 138, 200), rgb(200, 138, 75));
-    margin: 0;
-    padding: 40px 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    background: linear-gradient(135deg,
+            rgb(220, 220, 220) 30%,
+            rgb(211, 211, 211) 30%,
+            rgb(211, 211, 211) 70%,
+            rgb(220, 220, 220) 70%);
 }
 
 .project-banner h2 {
-    color: white;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 3em;
     padding: 0;
     text-align: center;
     margin: 0;
 }
 
+/* Project Section */
+.project-section {
+    padding: 40px 5%;
+}
+
 .project-card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 40px;
-    padding: 20px 10px;
-    border: 1px solid rgba(51, 51, 51, 0.2);
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1), 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     flex: 1;
+    margin-right: 20px;
 }
 
 .project-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-text {
@@ -42,25 +57,120 @@
 }
 
 .project-text h3 {
-    color: #333;
-    font-size: 1.6em;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-}
-
-.project-text h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 15%;
-    width: 70%;
-    border-bottom: solid 3px rgb(75, 138, 200);
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
 .project-text p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #333;
-    padding: 20px;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-banner {
+        height: 180px;
+    }
+
+    .project-banner h2 {
+        font-size: 2.5em;
+    }
+
+    .project-section {
+        padding: 30px 4%;
+    }
+
+    .project-card {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .project-text h3 {
+        font-size: 1.6em;
+    }
+
+    .project-text p {
+        font-size: 1.1em;
+    }
+
+    .project-image {
+        margin-right: 15px;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .project-banner {
+        height: 150px;
+    }
+
+    .project-banner h2 {
+        font-size: 2em;
+    }
+
+    .project-section {
+        padding: 20px 3%;
+    }
+
+    .project-card {
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .project-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-text h3 {
+        font-size: 1.4em;
+    }
+
+    .project-text p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .project-banner {
+        height: 120px;
+    }
+
+    .project-banner h2 {
+        font-size: 1.8em;
+    }
+
+    .project-section {
+        padding: 15px 2%;
+    }
+
+    .project-card {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .project-text h3 {
+        font-size: 1.3em;
+    }
+
+    .project-text p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .project-image {
+        margin-bottom: 15px;
+    }
 }

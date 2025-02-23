@@ -1,5 +1,5 @@
 .oil-banner {
-    background-image: url('/static/images/factory.jpg');
+    background-image: url('/static/images/factory.jpeg');
     height: 400px;
     background-size: cover;
     background-position: center 35%;
@@ -27,7 +27,7 @@
     font-weight: bolder;
     position: absolute;
     top: 25%;
-    left: 65%;
+    left: 5%;
     text-align: left;
     color: white;
     padding: 0 20px;
@@ -213,4 +213,182 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner-text {
+        font-size: 3.5em;
+        left: 55%;
+    }
+
+    .oil-slogan,
+    .oil-slogan-2 {
+        font-size: 1.8em;
+    }
+
+    .oil-slogan-text {
+        font-size: 1em;
+    }
+
+    .oil-section {
+        padding: 15px;
+    }
+
+    .section-text {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    .grid-container {
+        gap: 10px;
+    }
+
+    .grid-container i {
+        font-size: 4em;
+    }
+
+    .grid-container p {
+        font-size: 1.4em;
+    }
+
+    .strip-text {
+        font-size: 3.5em;
+    }
+
+    .strip-description {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .oil-banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        font-size: 2.5em;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-text::after {
+        left: 25%;
+        width: 50%;
+    }
+
+    .oil-slogan,
+    .oil-slogan-2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .oil-slogan-text {
+        font-size: 0.9em;
+        padding: 0 15px;
+    }
+
+    .oil-section {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .section-text {
+        font-size: 1em;
+        padding: 15px 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .grid-container i {
+        font-size: 3.5em;
+    }
+
+    .grid-container p {
+        font-size: 1.2em;
+    }
+
+    .oil-strip {
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .strip-text {
+        font-size: 2.5em;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .strip-text::after {
+        left: 25%;
+        width: 50%;
+    }
+
+    .strip-description {
+        font-size: 1.2em;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .oil-banner {
+        height: 250px;
+    }
+
+    .banner-text {
+        font-size: 2em;
+    }
+
+    .oil-slogan,
+    .oil-slogan-2 {
+        font-size: 1.3em;
+    }
+
+    .oil-slogan-text {
+        font-size: 0.85em;
+    }
+
+    .section-text {
+        font-size: 0.9em;
+    }
+
+    .grid-container i {
+        font-size: 3em;
+    }
+
+    .grid-container p {
+        font-size: 1.1em;
+    }
+
+    .oil-strip {
+        height: 250px;
+    }
+
+    .strip-text {
+        font-size: 2em;
+    }
+
+    .strip-description {
+        font-size: 1.1em;
+    }
 }
