@@ -1,0 +1,335 @@
+.contact-banner {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: rgb(75, 138, 200);
+    background: linear-gradient(135deg,
+            rgb(220, 220, 220) 30%,
+            rgb(211, 211, 211) 30%,
+            rgb(211, 211, 211) 70%,
+            rgb(220, 220, 220) 70%);
+    ;
+
+}
+
+.contact-banner h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-size: 3em;
+    font-weight: 900;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-call {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.contact-call i {
+    color: rgb(200, 138, 75);
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.call-text {
+    color: rgb(200, 138, 75);
+    font-size: 2.5em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.call-number {
+    color: #555;
+    font-size: 2em;
+    margin: 10px;
+}
+
+/* Contact Form Container */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 150px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-input:focus,
+.contact-form .form-textarea:focus {
+    border-color: rgb(75, 138, 200);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(75, 138, 200);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Required field styling */
+.required {
+    color: #d64045;
+    /* or any color you prefer */
+    margin-left: 4px;
+}
+
+.required-field-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+
+/* Success Message */
+.success-form {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(75, 138, 200, 0.2);
+    /* Solid color */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Adjusted shadow for better visibility */
+    z-index: 10;
+}
+
+.success-message {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: rgb(75, 138, 200);
+    text-align: center;
+    /* White for good contrast */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-banner {
+        padding: 30px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2.8em;
+    }
+
+    .contact-call i {
+        font-size: 2.3em;
+        padding-top: 15px;
+    }
+
+    .call-text {
+        font-size: 2em;
+    }
+
+    .call-number {
+        font-size: 1.6em;
+    }
+
+    .contact-form {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    .contact-form p {
+        font-size: 15px;
+    }
+
+    .success-form {
+        max-width: 80%;
+    }
+}
+
+/* Mobile Styles (up to 768px) */
+@media (max-width: 768px) {
+    .contact-banner {
+        padding: 25px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2.5em;
+    }
+
+    .contact-call {
+        margin-top: 15px;
+    }
+
+    .contact-call i {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+
+    .call-text {
+        font-size: 1.8em;
+        margin-top: 8px;
+    }
+
+    .call-number {
+        font-size: 1.4em;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .contact-form p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .contact-form .form-input,
+    .contact-form .form-textarea {
+        padding: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form .form-textarea {
+        min-height: 120px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .success-form {
+        max-width: 90%;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .success-message {
+        font-size: 1em;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+    .contact-banner {
+        padding: 20px 0;
+    }
+
+    .contact-banner h2 {
+        font-size: 2em;
+    }
+
+    .contact-call i {
+        font-size: 1.8em;
+    }
+
+    .call-text {
+        font-size: 1.5em;
+    }
+
+    .call-number {
+        font-size: 1.2em;
+    }
+
+    .contact-form {
+        max-width: 95%;
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .contact-form p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .contact-form .form-input,
+    .contact-form .form-textarea {
+        padding: 8px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form .form-textarea {
+        min-height: 100px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .success-form {
+        max-width: 95%;
+        margin-top: 12px;
+        padding: 12px;
+    }
+
+    .success-message {
+        font-size: 0.9em;
+    }
+}
