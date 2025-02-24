@@ -19,6 +19,10 @@ import dj_database_url
 # create a secure connection
 os.environ["SSL_CERT_FILE"] = certifi.where()
 
+# settings.py
+SECURE_SSL_REDIRECT = True  # Force HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # load.env file
 env = environ.Env()
 environ.Env.read_env()
@@ -34,9 +38,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!rztj4v+2w0atq1vhohk$3i)13*3k$-wop%(bwy!56pi8222h1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'your-domain.com']
+ALLOWED_HOSTS = ['.herokuapp.com', 'feroxaero.com', 'www.feroxaero.com']
 
 
 # Application definition
