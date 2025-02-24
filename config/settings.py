@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import certifi
 import environ
+import dj_database_url
 
 # create a secure connection
 os.environ["SSL_CERT_FILE"] = certifi.where()
@@ -94,6 +95,9 @@ DATABASES = {
     }
 }
 
+# Use PostgreSQL on Heroku
+if 'DATABASE_URL' in os.environ:
+    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
